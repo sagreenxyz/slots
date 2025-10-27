@@ -12,9 +12,13 @@ A reactive, interactive slot machine game built with HTML, CSS, and vanilla Java
 - **Responsive design** that works on desktop and mobile devices
 - **Visual feedback** with animations for wins and jackpots
 
+## Live Demo
+
+Play the game online: `https://sagreenxyz.github.io/slots/`
+
 ## How to Play
 
-1. Open `index.html` in your web browser
+1. Open `index.html` in your web browser (or visit the live demo above)
 2. Click the **SPIN** button to play (costs 10 credits by default)
 3. Use **+** and **-** buttons to adjust your bet amount
 4. Match symbols to win credits:
@@ -58,6 +62,25 @@ Works on all modern browsers:
 - Firefox
 - Safari
 - Edge
+
+## GitHub Pages Deployment
+
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions.
+
+### Setup Instructions
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under **Source**, select **GitHub Actions**
+4. The site will automatically deploy when you push to the main branch or any `claude/gh-pages-*` branch
+5. Your site will be available at: `https://sagreenxyz.github.io/slots/`
+
+### Manual Deployment
+
+If you prefer to deploy manually:
+1. Merge the pull request to the main branch
+2. The GitHub Actions workflow will automatically deploy the site
+3. Check the **Actions** tab to monitor deployment progress
 
 ## Credits
 
