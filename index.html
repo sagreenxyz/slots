@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Slot Machine</h1>
+
+        <div class="game-info">
+            <div class="info-box">
+                <span class="label">Credits:</span>
+                <span class="value" id="credits">100</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Bet:</span>
+                <span class="value" id="bet">10</span>
+            </div>
+            <div class="info-box">
+                <span class="label">Win:</span>
+                <span class="value" id="win">0</span>
+            </div>
+        </div>
+
+        <div class="slot-machine">
+            <div class="reel-container">
+                <div class="reel" id="reel1">
+                    <div class="symbol">🍒</div>
+                </div>
+                <div class="reel" id="reel2">
+                    <div class="symbol">🍋</div>
+                </div>
+                <div class="reel" id="reel3">
+                    <div class="symbol">🍊</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="message" id="message"></div>
+
+        <div class="controls">
+            <button class="bet-btn" id="decreaseBet">-</button>
+            <button class="spin-btn" id="spinBtn">SPIN</button>
+            <button class="bet-btn" id="increaseBet">+</button>
+        </div>
+
+        <div class="paytable">
+            <h3>Paytable</h3>
+            <ul>
+                <li>🍒 🍒 🍒 = 50x</li>
+                <li>🍋 🍋 🍋 = 40x</li>
+                <li>🍊 🍊 🍊 = 30x</li>
+                <li>🍇 🍇 🍇 = 25x</li>
+                <li>🍉 🍉 🍉 = 20x</li>
+                <li>⭐ ⭐ ⭐ = 100x JACKPOT!</li>
+                <li>Any 2 matching = 2x</li>
+            </ul>
+        </div>
+
+        <button class="reset-btn" id="resetBtn">Reset Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
